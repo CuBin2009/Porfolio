@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="assets/swiper-bundle.min.css">
 </head>
 <body>
+    <!-- Scroll Top -->
+    <a href="#home" class="scroll-top">
+        <i class='bx bx-up-arrow-alt' ></i>
+    </a>
     <!-- Header -->
-    <header>
+    
+    <header >
         <!-- Nav -->
             <div class="nav container">
                 <!-- Logo -->
@@ -34,7 +39,7 @@
             </div>
     </header>
     <!-- Home -->
-    <section class="home container=">
+    <section class="home container " id="home">
         <div class="home-content">
             <div class="home-img">
                 <img src="img/cubin_ok.jpg" alt="">
@@ -183,21 +188,90 @@
                             <p class="review-text">
                                 Errors and exceptions also often appear at the beginning. Therefore, you need a way to deal with them systematically as soon as possible.
                             </p>
-                        </div>
+                        
                         <div class="review-profile">
                             <h2>Cu Bin</h2>
                             <span>From Da Nang</span>
-                            <img src="img/cubin_4.jpg" alt="" srcset="">
+                            <img src="img/cubin_7.jpg" alt="" srcset="">
                         </div>
                     </div>
+                </div>
+                <div class="swiper-slide">
+                    <!-- Review box-->
+                    <div class="review-box">
+                        <i class='bx bxs-quote-right' ></i>
+                        <p class="review-text">
+                            If you have to refactor code before you embed the new feature in the product, commit the refactored code first. Then (in a new commit) add the new feature.
+                        </p>
                     
+                    <div class="review-profile">
+                        <h2>Kim Hung</h2>
+                        <span>From Hai Chau</span>
+                        <img src="img/cubon_9.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!-- Review box-->
+                <div class="review-box">
+                    <i class='bx bxs-quote-right' ></i>
+                    <p class="review-text">
+                        “One of the best programming skills you can learn is knowing when to take a break.”
+                    </p>
+                
+                <div class="review-profile">
+                    <h2>Thanh Dat</h2>
+                    <span>From Cam Le, Da Nang</span>
+                    <img src="img/cubin_8.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
                 </div>
                 
                 <div class="swiper-pagination"></div>
             </div>
     </section>
+    <!-- Contact form -->
+    <section class="contact container" id="contact">
+        <h2 class="heading">Contact</h2>
+        <form action="" class="contact-form" id="contact">
+            <input type="text" placeholder="Your Name" class="name" required>
+            <input type="email" name=" " id=""  placeholder="Email address..." class="mail" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." class="message" required></textarea>
+            <input type="submit" value="Send" class="send-btn">
+        </form>
+    </section>
+    <!-- Footer -->
+    <section class="footer container" id="footer">
+        <div class="social">
+            <a href="mailto:ndat20009@gmail.com" ><i class='bx bx-envelope'></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        <!-- Footer Links -->
+        <div class="footer-links">
+            <a href="#"> Privacy Policy</a>
+            <a href="#"> Terms Of Use</a>
+            <a href="#"> Other</a>
+        </div>
+        <!-- copyright -->
+        <p>&#169 Thanh Dat</p>
+    </section>
+    <!-- Email Js -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function(){
+
+            emailjs.init('YdlYauw38Y_XyFkNV')
+        })();
+    </script>
     <!-- Link Swiper Js -->
     <script src="/Javascript/swiper-bundle.min.js"></script>
+    <!-- Sweet Alert JS Link -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Link to Js -->
     <script src="/Javascript/main.js"></script>
 </body>
